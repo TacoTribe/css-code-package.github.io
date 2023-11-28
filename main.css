@@ -162,8 +162,14 @@ body.dark-mode .mainButtons:active {
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
+/* Fix Spacing Desktop Navigation */
 .elementor-4452 .elementor-element.elementor-element-f40b226 {
   width:!important;
+}
+
+/* Fix Spacing Desktop Navigation */
+.elementor-4452 .elementor-element.elementor-element-5a96e82>.elementor-container{
+    justify-content: space-between;
 }
 
 /* Burger CSS  */
