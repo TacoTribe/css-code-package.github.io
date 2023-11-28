@@ -306,3 +306,19 @@ a.mainButtons:hover {
   text-decoration: none;
 }
 /* Remove Dotted When Hover Navlink and Button */
+
+/* Utility Style  */
+  .mainText{
+    color: #202020;
+  }
+
+  body.dark-mode .mainText{
+    color: white;
+  }
+  
+  .highlightText{
+    color: #DBBF09;
+    text-decoration: underline;
+    text-decoration-color: #DBBF09;
+  }
+/* Utility Style */
