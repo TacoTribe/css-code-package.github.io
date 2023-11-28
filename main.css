@@ -261,42 +261,38 @@ body.dark-mode .btn-burguer::after{
 /* Burger CSS */
 
 /* Navigation auto line when scrolling */
-  .navigation {
-    position: relative;
-    z-index: 15;
-    border-bottom: 1px solid transparent;
-    transition: all 0.5s ease-in-out;
-    background-color: white !important;
+  .navigation{
+      position: relative;
+      z-index: 15;
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s ease-in-out;
   }
 
-  body.dark-mode .navigation {
-    background-color: #202020 !important;
-  }
-
-  .stickyNav,
-  .stickyNavMobile {
-    transition: border-bottom 0.5s ease-in-out;
+  .navigation.sticky{
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: 1px solid #202020;
   }
 
-  body.dark-mode .navigation {
-    border-bottom: 1px solid transparent;
+  #stickyNav,
+  #stickyNavMobile{
+    transition: border-bottom 0.5s ease-in-out;
+  }
+
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+
+  body.dark-mode .navigation{
+    border-bottom : 1px solid transparent;
     transition: all 0.5s ease-in-out;
   }
 
-  body.dark-mode .navigation.sticky {
+  body.dark-mode .navigation.sticky{
     border-bottom: 1px solid white;
-  }
-
-  @keyframes fadeInDown {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
   }
 /* Navigation auto line when scrolling */
 
