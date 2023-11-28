@@ -265,18 +265,19 @@ body.dark-mode .btn-burguer::after{
       position: relative;
       z-index: 15;
       border-bottom: 1px solid transparent;
-      transition: border-bottom 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
   }
 
   .navigation.with-border{
     top: 0;
     width: 100%;
     border-bottom: 1px solid #202020;
+    transition: all 0.5s ease-in-out;
   }
 
   section#stickyNav,
   section#stickyNavMobile{
-    transition: border-bottom 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 100%;
     position:sticky!important;
   }
