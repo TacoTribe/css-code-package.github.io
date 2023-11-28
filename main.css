@@ -78,6 +78,7 @@ body:not(.dark-mode) .darkModeSwitch {
   column-gap: 10px;
   justify-content: center;
   align-items: center;
+  text-decoration: none; 
 }
 
 .mainButtons.mode {
@@ -295,9 +296,13 @@ body.dark-mode .btn-burguer::after{
   }
 /* Navigation auto line when scrolling */
 
-/* Remove Dotted When Hover Navlink */
+/* Remove Dotted When Hover Navlink and Button */
 .wrapperNav a:hover {
   text-decoration: none; 
   border-bottom: none; 
 }
-/* Remove Dotted When Hover Navlink */
+
+a.mainButtons:hover {
+  text-decoration: none;
+}
+/* Remove Dotted When Hover Navlink and Button */
