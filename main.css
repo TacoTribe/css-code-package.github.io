@@ -1,0 +1,82 @@
+    body{
+        background-color: white;
+    }
+    
+    body.dark-mode{
+        background-color: #202020;
+    }
+
+    body.dark-mode #whiteModeSwitch,
+    body.dark-mode #darkModeSwitch {
+        color: #202020!important;
+    }
+    
+    body.dark-mode .navlink{
+        color: white;
+    }
+    
+    body.dark-mode .navlink:hover,
+    body.dark-mode .navlink:focus,
+    body.dark-mode .navlink:active{
+        color: #202020;
+    }
+
+    #whiteModeSwitch, /* Ini harusnya #whiteModeSwitch, bukan #whiteModeSwtich */
+    #darkModeSwitch {
+        transition: color 0.5s ease;
+    }
+
+    body.dark-mode {
+        background-color: #202020;
+    }
+
+    .switchMode {
+        display: flex;
+    }
+
+    .darkModeSwitch,
+    .whiteModeSwitch {
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 20px;
+    }
+
+    .darkModeSwitch:hover,
+    .whiteModeSwitch:hover {
+        /* Anda bisa menambahkan gaya hover sesuai kebutuhan di sini */
+    }
+
+    body.dark-mode .whiteModeSwitch,
+    body:not(.dark-mode) .darkModeSwitch {
+        display: none;
+    }
+
+    .navButtonGroup {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        justify-content: start;
+    }
+
+    .mainButtons {
+        font-family: 'Candy Beans', Sans-Serif;
+        font-size: 20px;
+        line-height: normal;
+        color: #202020;
+        padding: 12px 35px;
+        border-radius: 8px;
+        background-color: #FEDF18;
+        border: 2px solid #202020;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Perbaikan pada bagian ini */
+    .mainButtons.mode {
+        padding: 12px 12px;
+    }
