@@ -100,6 +100,7 @@ img.imgLogo {
   color: #202020;
   padding: 5px 10px;
   border-radius:8px;
+  transition: all 0.3s ease-in-out;
 }
     
 .navlink:hover,
@@ -107,5 +108,52 @@ img.imgLogo {
 .navlink:active{
   background-color: #FEDF18;
   color: #202020;
+}
+
+.mainButtons {
+    box-shadow: 0px 8px 0px 0px #393939 !important;
+    -webkit-box-shadow: 0px 8px 0px 0px #393939 !important;
+    -moz-box-shadow: 0px 8px 0px 0px #393939 !important;
+    position: relative;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.mainButtons:hover,
+.mainButtons:focus {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 0px 0px #393939 !important;
+    -webkit-box-shadow: 0px 2px 0px 0px #393939 !important;
+    -moz-box-shadow: 0px 4px 0px 0px #393939 !important;
+}
+
+.mainButtons:active {
+    transform: translateY(8px);
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.dark-mode .mainButtons {
+    border-color: white;
+    box-shadow: 0px 8px 0px 0px white !important;
+    -webkit-box-shadow: 0px 8px 0px 0px white !important;
+    -moz-box-shadow: 0px 8px 0px 0px white !important;
+    position: relative;
+    transform: translateY(0px) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .mainButtons:hover,
+body.dark-mode .mainButtons:active {
+    box-shadow: 0px 4px 0px 0px white !important;
+    -webkit-box-shadow: 0px 4px 0px 0px white !important;
+    -moz-box-shadow: 0px 4px 0px 0px white !important;
+    transform: translateY(4px) !important;
+}
+
+body.dark-mode .mainButtons:active {
+    transform: translateY(8px) !important;
+    box-shadow: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
