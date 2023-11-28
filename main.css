@@ -286,9 +286,11 @@ body.dark-mode .btn-burguer::after{
   width: 100%;
   }
 
-  body.dark-mode .navigation{
+  body.dark-mode section#stickyNav,
+  body.dark-mode section#stickyNavMobile{
     border-bottom : 1px solid transparent;
     transition: all 0.5s ease-in-out;
+    background-color: #202020!important;
   }
 
   body.dark-mode .navigation.with-border{
