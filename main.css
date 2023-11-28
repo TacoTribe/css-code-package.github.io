@@ -266,6 +266,11 @@ body.dark-mode .btn-burguer::after{
       z-index: 15;
       border-bottom: 1px solid transparent;
       transition: all 0.5s ease-in-out;
+      background-color:white!important;
+  }
+
+  body.dark-mode .navigation{
+    background-color:#202020!important;
   }
 
   .navigation.sticky{
