@@ -317,8 +317,8 @@ a.mainButtons:hover {
   }
   
   .highlightText{
-    color: #DBBF09;
-    text-decoration: underline;
-    text-decoration-color: #DBBF09;
+    color: #DBBF09!important;
+    text-decoration: underline!important;
+    text-decoration-color: #DBBF09!important;
   }
 /* Utility Style */
