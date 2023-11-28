@@ -270,7 +270,7 @@ body.dark-mode .btn-burguer::after{
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 1px solid #202020;
+    border-bottom: 2px solid #202020;
   }
 
   .sticky {
@@ -280,7 +280,7 @@ body.dark-mode .btn-burguer::after{
   }
 
   body.dark-mode .navigation.sticky{
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
   }
 /* Navigation auto line when scrolling */
 
