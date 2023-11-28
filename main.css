@@ -54,7 +54,7 @@ body:not(.dark-mode) .darkModeSwitch {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
-  justify-content: start;
+  justify-content: end;
 }
 
 .mainButtons {
