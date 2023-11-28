@@ -278,6 +278,7 @@ body.dark-mode .btn-burguer::after{
   section#stickyNavMobile{
     transition: border-bottom 0.5s ease-in-out;
     width: 100%;
+    position:sticky!important;
   }
 
   .sticky {
