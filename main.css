@@ -273,3 +273,10 @@ body.dark-mode .btn-burguer::after{
   border-bottom: 1px solid #333;
 }
 /* Navigation auto line when scrolling */
+
+/* Remove Dotted When Hover Navlink */
+.wrapperNav a:hover {
+  text-decoration: none; 
+  border-bottom: none; 
+}
+/* Remove Dotted When Hover Navlink */
