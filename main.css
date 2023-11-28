@@ -162,8 +162,8 @@ body.dark-mode .mainButtons:active {
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-.elementor-4452 .elementor-element.elementor-element-5a96e82 > .elementor-container {
-   
+.elementor-4452 .elementor-element.elementor-element-f40b226 {
+  width:0!important;
 }
 
 /* Burger CSS  */
