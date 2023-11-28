@@ -321,4 +321,21 @@ a.mainButtons:hover {
     text-decoration: underline!important;
     text-decoration-color: #DBBF09!important;
   }
+
+  .staticButton{
+    width:100%;
+  }
 /* Utility Style */
+
+/* Mini Gallery Style */
+  .miniGallery img{
+    border-radius: 8px!important;
+    border: 2px solid #202020;
+    z-index: 2;
+  }
+  
+  body.dark-mode .miniGallery img{
+      border: 2px solid white;
+  }
+/* Mini Gallery Style */
+
