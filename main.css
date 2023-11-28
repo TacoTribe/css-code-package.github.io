@@ -1,3 +1,8 @@
+:root{
+  --color1: white;
+  --color2: #202020;
+}
+
 /* Body Default Color */
 body{
   background-color: white;
@@ -157,3 +162,89 @@ body.dark-mode .mainButtons:active {
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
+.elementor-4452 .elementor-element.elementor-element-5a96e82 > .elementor-container {
+    justify-content: end;
+}
+
+/* Burger CSS  */
+.burguer-container{
+  cursor: pointer;
+  --distancia_btn-burger: 5px;
+  --ancho_btn-burger: 35px;
+  --alto_btn-burger: 4px;
+  --bd_radio: 1em;
+  --dimension: 50px;
+  height: calc( var(--distancia_btn-burger) * 2 );
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0px;
+}
+
+.btn-burguer{
+  background-color: ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  transition: all ease .3s;
+  transition-delay: .075s;
+  font-size: var(--dimension);
+  border-radius: var(--bd_radio);
+  width: var(--ancho_btn-burger);
+  height: var(--alto_btn-burger);
+}
+
+.btn-burguer::before,
+.btn-burguer::after{
+  --distancia-seudoelemento: translateY( var(--distancia_btn-burger) );
+  --rotacion-inicial: rotateZ(0deg);
+  --rotacion-final: rotateZ(45deg);
+  --distancia-negada: translateY(0);
+  content: '';
+  display: inline-flex;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background-color: var(--color2);
+  border-radius: inherit;
+  transform-origin: 50% 50%;
+  transition: inherit;
+  transition-delay: 0;
+  animation: inherit;
+  transform: var(--distancia-seudoelemento) var(--rotacion-inicial);
+}
+
+.btn-burguer::after{
+  --rotacion-final: rotateZ(-45deg);
+  --distancia-negativa: calc( var(--distancia_btn-burger) * -1);
+  --distancia-arriba: translateY( var(--distancia-negativa) );
+  --distancia-seudoelemento: var(--distancia-arriba) ;
+}
+
+#btn_burguer{
+  position: absolute;
+  opacity: 0;
+}
+
+#btn_burguer:checked ~ .btn-burguer{  
+  background-color: rgba(255,255,255,0);
+  animation: anima_btn-burger 1s ease 1 forwards;
+}
+
+#btn_burguer:not(:checked):focus ~ .btn-burguer{  
+  animation: desanima_btn-burger 1s ease 1 forwards;
+}
+
+
+@keyframes anima_btn-burger{ 
+  50% { transform: var(--distancia-negada) var(--rotacion-inicial);}
+  100% { transform: var(--distancia-negada) var(--rotacion-final);}
+}
+
+@keyframes desanima_btn-burger{ 
+  50% { transform: var(--distancia-negada) var(--rotacion-inicial);}
+  0% { transform: var(--distancia-negada) var(--rotacion-final);}
+}
+/* Burger Css  */
