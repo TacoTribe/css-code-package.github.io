@@ -177,7 +177,7 @@ body.dark-mode .mainButtons:active {
   cursor: pointer;
   --distancia_btn-burger: 5px;
   --ancho_btn-burger: 35px;
-  --alto_btn-burger: 4px;
+  --alto_btn-burger: 3px;
   --bd_radio: 1em;
   --dimension: 50px;
   height: calc( var(--distancia_btn-burger) * 2 );
@@ -270,7 +270,7 @@ body.dark-mode .btn-burguer::after{
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 2px solid #202020;
+    border-bottom: 1px solid #202020;
   }
 
   .sticky {
@@ -280,7 +280,7 @@ body.dark-mode .btn-burguer::after{
   }
 
   body.dark-mode .navigation.sticky{
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
   }
 /* Navigation auto line when scrolling */
 
