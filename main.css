@@ -273,6 +273,11 @@ body.dark-mode .btn-burguer::after{
     border-bottom: 1px solid #202020;
   }
 
+  .stickyNav,
+  .stickyNavMobile{
+    transition: border-bottom 0.3s ease-in-out;
+  }
+
   .sticky {
   position: fixed;
   top: 0;
