@@ -237,6 +237,10 @@ body.dark-mode .mainButtons:active {
   animation: desanima_btn-burger 1s ease 1 forwards;
 }
 
+body.dark-mode .btn-burguer::before,
+body.dark-mode .btn-burguer::after{
+  background-color:white; 
+}
 
 @keyframes anima_btn-burger{ 
   50% { transform: var(--distancia-negada) var(--rotacion-inicial);}
