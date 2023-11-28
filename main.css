@@ -274,7 +274,7 @@ body.dark-mode .btn-burguer::after{
   }
 
   body.dark-mode .navigation.sticky{
-    border-bottom: 1px solid white
+    border-bottom: 1px solid white;
   }
 /* Navigation auto line when scrolling */
 
