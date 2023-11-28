@@ -322,7 +322,7 @@ a.mainButtons:hover {
     text-decoration-color: #DBBF09!important;
   }
 
-  .staticButton{
+  .staticButton a{
     width:100%;
   }
 /* Utility Style */
