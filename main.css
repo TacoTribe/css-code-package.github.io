@@ -265,10 +265,10 @@ body.dark-mode .btn-burguer::after{
       position: relative;
       z-index: 15;
       border-bottom: 1px solid transparent;
-      transition: all 0.5s ease-in-out;
+      transition: border-bottom 0.5s ease-in-out;
   }
 
-  .navigation.sticky{
+  .navigation.with-border{
     position: fixed;
     top: 0;
     width: 100%;
@@ -291,7 +291,7 @@ body.dark-mode .btn-burguer::after{
     transition: all 0.5s ease-in-out;
   }
 
-  body.dark-mode .navigation.sticky{
+  body.dark-mode .navigation.with-border{
     border-bottom: 1px solid white;
   }
 /* Navigation auto line when scrolling */
