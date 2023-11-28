@@ -266,12 +266,16 @@ body.dark-mode .btn-burguer::after{
   transition: all 0.5s ease-in-out;
   }
 
-.navigation.sticky{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border-bottom: 1px solid #333;
-}
+  .navigation.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #202020;
+  }
+
+  body.dark-mode .navigation.sticky{
+    border-bottom: 1px solid white
+  }
 /* Navigation auto line when scrolling */
 
 /* Remove Dotted When Hover Navlink */
