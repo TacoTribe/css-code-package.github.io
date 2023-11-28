@@ -140,10 +140,10 @@ img.imgLogo {
 }
 
 body.dark-mode .mainButtons {
-    border-color: white;
-    box-shadow: 0px 8px 0px 0px white !important;
-    -webkit-box-shadow: 0px 8px 0px 0px white !important;
-    -moz-box-shadow: 0px 8px 0px 0px white !important;
+  border-color: #A0522D;
+  box-shadow: 0px 8px 0px 0px #a0972d !important;
+  -webkit-box-shadow: 0px 8px 0px 0px #a0972d !important;
+  -moz-box-shadow: 0px 8px 0px 0px #a0972d !important;
     position: relative;
     transform: translateY(0px) !important;
     transition: all 0.3s ease-in-out;
@@ -151,9 +151,9 @@ body.dark-mode .mainButtons {
 
 body.dark-mode .mainButtons:hover,
 body.dark-mode .mainButtons:active {
-    box-shadow: 0px 4px 0px 0px white !important;
-    -webkit-box-shadow: 0px 4px 0px 0px white !important;
-    -moz-box-shadow: 0px 4px 0px 0px white !important;
+    box-shadow: 0px 4px 0px 0px #a0972d !important;
+    -webkit-box-shadow: 0px 4px 0px 0px #a0972d !important;
+    -moz-box-shadow: 0px 4px 0px 0px #a0972d !important;
     transform: translateY(4px) !important;
 }
 
