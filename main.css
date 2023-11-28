@@ -294,7 +294,7 @@ body.dark-mode .btn-burguer::after{
     background-color: #202020!important;
   }
 
-  body.dark-mode .navigation.with-border{
+  body.dark-mode .with-border{
     border-bottom: 1px solid white;
   }
 /* Navigation auto line when scrolling */
