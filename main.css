@@ -357,6 +357,12 @@ a.mainButtons:hover {
   font-size: 20px;
 }
 
+.socialFooter:hover,
+.socialFooter:focus,
+.socialFooter:active{
+  color:#FFA713;
+}
+
 body.dark-mode .socialFooter{
   color:white!important;
 }
