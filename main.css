@@ -378,7 +378,7 @@ body.dark-mode .socialFooter{
 
 
 /* Breakpoint tablet */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   #accentPic{
     display:none!important;
   }
