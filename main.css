@@ -363,13 +363,16 @@ body.dark-mode .socialFooter{
 /* Footer Style */
 
 /* Next Page Main Function */
-  .sectionPage{
-    display:none;
-  }
+.sectionPage {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Ubah durasi dan fungsi-timing sesuai kebutuhan */
+}
 
-  .sectionPage.activeSection{
-    display:block;
-  }
+.sectionPage.activeSection {
+  display: block;
+  opacity: 1;
+}
 /* Next Page Main Function */
 
 
