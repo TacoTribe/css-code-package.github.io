@@ -415,6 +415,13 @@ a.mainButtons:hover {
 body.dark-mode .socialFooter{
   color:white!important;
 }
+
+body.dark-mode .socialFooter:hover,
+body.dark-mode .socialFooter:focus,
+body.dark-mode .socialFooter:active{
+  color:#FFA713;
+}
+
 /* Footer Style */
 
 /* Next Page Main Function */
