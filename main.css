@@ -13,6 +13,14 @@
     border-radius: 10px;
 }
 
+body.dark-mode ::-webkit-scrollbar-thumb {
+      background-color: white;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background-color: #3d3d3d;
+}
+
 /* Body Default Color */
 body{
   background-color: white;
