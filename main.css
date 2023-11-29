@@ -362,6 +362,16 @@ body.dark-mode .socialFooter{
 }
 /* Footer Style */
 
+/* Next Page Main Function */
+  .sectionPage{
+    display:none;
+  }
+
+  .sectionPage.activeSection{
+    display:block;
+  }
+/* Next Page Main Function */
+
 
 
 /* Breakpoint tablet */
