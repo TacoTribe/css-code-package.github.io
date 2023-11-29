@@ -437,6 +437,34 @@ body.dark-mode .socialFooter:active{
 }
 /* Next Page Main Function */
 
+/* Section 3 Card */
+  .cardWrapper div{
+    display: flex;
+    column-gap: 20px!important;
+    justify-content: space-between;
+}
+
+.cardWrapper img{
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardWrapper img:hover,
+.cardWrapper img:focus,
+.cardWrapper img:active{
+    border:1px solid #202020;
+        transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .cardWrapper img:hover,
+body.dark-mode .cardWrapper img:focus,
+body.dark-mode .cardWrapper img:active{
+    border: 1px solid white!important;
+}
+
+
+/* Section 3 Card  */
+
 
 
 /* Breakpoint tablet */
