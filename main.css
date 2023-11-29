@@ -465,6 +465,12 @@ body.dark-mode .cardWrapper img:active{
 
 /* Section 3 Card  */
 
+/* Section 5 */
+  #mg5 img{
+    width: 100%;  
+  }
+/* Section 5 */
+
 
 
 /* Breakpoint tablet */
