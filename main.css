@@ -4,6 +4,7 @@
 }
 
 /* Light Mode */
+/* WebKit Browsers (e.g., Safari) */
 ::-webkit-scrollbar-thumb {
     background-color: #202020;
     border-radius: 10px;
@@ -14,6 +15,18 @@
     border-radius: 10px;
 }
 
+/* Standard Scrollbars (for non-WebKit browsers) */
+/* Note: These styles may not work in all browsers */
+/* You may need to test and adjust based on browser support */
+/* Adjust colors and styles as needed */
+body ::-webkit-scrollbar-thumb {
+    background-color: #202020;
+}
+
+body ::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+}
+
 /* Dark Mode */
 body.dark-mode ::-webkit-scrollbar-thumb {
     background-color: white !important;
@@ -21,6 +34,21 @@ body.dark-mode ::-webkit-scrollbar-thumb {
 
 body.dark-mode ::-webkit-scrollbar-track {
     background-color: #3d3d3d !important;
+}
+
+/* Standard Scrollbars in Dark Mode */
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background-color: #3d3d3d;
+}
+
+body.dark-mode {
+    /* Standard Scrollbars (for non-WebKit browsers) in Dark Mode */
+    /* Note: These styles may not work in all browsers */
+    scrollbar-color: white #3d3d3d;
 }
 
 /* Body Default Color */
