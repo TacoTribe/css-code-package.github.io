@@ -485,4 +485,8 @@ body.dark-mode .cardWrapper img:active{
     justify-content:center;
   }
 
+  .navButtonGroup {
+    justify-content: center!important;
+  }
+
 }
