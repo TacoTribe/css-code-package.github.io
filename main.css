@@ -419,7 +419,7 @@ body.dark-mode .socialFooter{
 body.dark-mode .socialFooter:hover,
 body.dark-mode .socialFooter:focus,
 body.dark-mode .socialFooter:active{
-  color:#FFA713;
+  color:#FFA713!important;
 }
 
 /* Footer Style */
