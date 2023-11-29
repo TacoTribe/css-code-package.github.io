@@ -391,4 +391,8 @@ body.dark-mode .socialFooter{
     display:none!important;
   }
 
+  .wrapperSocialFooter{
+    justify-content:center;
+  }
+
 }
