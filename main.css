@@ -3,6 +3,10 @@
   --color2: #202020;
 }
 
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 /* Body Default Color */
 body{
   background-color: white;
