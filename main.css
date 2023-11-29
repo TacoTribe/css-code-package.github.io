@@ -342,6 +342,26 @@ a.mainButtons:hover {
   }
 /* Mini Gallery Style */
 
+/* Footer Style */
+  .wrapperSocialFooter{
+  display:flex;
+  flex-direction:row;
+  column-gap:31px;
+  flex-warp:warp;
+  justify-content:end;
+}
+
+.socialFooter{
+  text-decoration:none;
+  color:#202020;
+  font-size: 20px;
+}
+
+body.dark-mode .socialFooter{
+  color:white!important;
+}
+/* Footer Style */
+
 
 
 /* Breakpoint tablet */
