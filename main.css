@@ -445,14 +445,14 @@ body.dark-mode .socialFooter:active{
 }
 
 .cardWrapper img{
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
 }
 
 .cardWrapper img:hover,
 .cardWrapper img:focus,
 .cardWrapper img:active{
-    border:1px solid #202020;
+    border:2px solid #202020;
         transition: all 0.3s ease-in-out;
 }
 
