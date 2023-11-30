@@ -486,6 +486,11 @@ body.dark-mode .cardWrapper img:active{
     border: 2px solid #202020!important;
     padding: 9px 18.74px;
     height: 62.65px!important;
+    background: white!important;
+  }
+
+  body.dark-mode .collaboration img{
+    border: 2px solid #FFA713!important;
   }
 /* Section 9  */
 
