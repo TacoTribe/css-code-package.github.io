@@ -471,6 +471,24 @@ body.dark-mode .cardWrapper img:active{
   }
 /* Section 5 */
 
+/* Section 9  */
+  .gifImages img{
+    max-width: 100%!important;
+    width: 100%!important;
+    height: 100%!important;
+  }
+
+  .collaboration img{
+    width: 100vw!important;
+    height: 100%!important;
+    max-width: 100%!important;
+    border-radius: 8px!important;
+    border: 2px solid #202020!important;
+    padding: 9px 18.74px;
+    height: 62.65px!important;
+  }
+/* Section 9  */
+
 
 
 /* Breakpoint tablet */
