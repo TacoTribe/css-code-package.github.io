@@ -164,6 +164,38 @@ img.imgLogo {
   color: #202020;
 }
 
+.wrapperSubmenu {
+  position: relative;
+}
+
+/* Styling for the mega menu */
+.megaMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,.1); */
+    z-index: 1;
+    width: 150px;
+    border-radius: 16px;
+    border: 2px solid #FEDF18;
+}
+
+/* Styling for the subnavigasi links */
+.subnavigasiLinks {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #202020;
+  font-family: 'Candy Beans', Sans-Serif;
+}
+
+/* Show mega menu on hover */
+.wrapperSubmenu:hover .megaMenu {
+  display: block;
+}
+
 .mainButtons {
     box-shadow: 0px 8px 0px 0px #393939 !important;
     -webkit-box-shadow: 0px 8px 0px 0px #393939 !important;
