@@ -145,7 +145,7 @@ img.imgLogo {
 }
 
 /* Show mega menu on hover */
-.wrapperSubmenu:active .megaMenu {
+.wrapperSubmenu:hover .megaMenu {
   display: block;
 }
 
