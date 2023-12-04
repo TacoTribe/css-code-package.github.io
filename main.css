@@ -151,18 +151,10 @@ img.imgLogo {
   opacity: 1;
 }
 
-.wrapperSubmenu:hover .megaMenu:hover .subnavigasiLinks{
-  display:block;
-}
-
 /* Hide mega menu when not hovering over the submenu or mega menu */
 .wrapperSubmenu:not(:hover) .megaMenu{
   display: none;
   opacity: 0;
-}
-
-.wrapperSubmenu:not(:hover) .megaMenu .subnavigasiLinks{
-  display:none;
 }
 
 .mainButtons {
