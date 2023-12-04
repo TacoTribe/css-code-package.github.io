@@ -122,17 +122,16 @@ img.imgLogo {
 
 /* Styling for the mega menu */
 .megaMenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    /* box-shadow: 0 4px 8px rgba(0,0,0,.1); */
-    z-index: 1;
-    width: 150px;
-    border-radius: 16px;
-    border: 2px solid #FEDF18;
-    margin-top:10px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  width: 150px;
+  border-radius: 16px;
+  border: 2px solid #FEDF18;
+  margin-top: 10px;
 }
 
 /* Styling for the subnavigasi links */
@@ -144,9 +143,15 @@ img.imgLogo {
   font-family: 'Candy Beans', Sans-Serif;
 }
 
-/* Show mega menu on hover */
-.wrapperSubmenu:hover .megaMenu {
+/* Show mega menu on hover and keep it open when moving towards it */
+.wrapperSubmenu:hover .megaMenu,
+.megaMenu:hover {
   display: block;
+}
+
+/* Hide mega menu when not hovering over the submenu or mega menu */
+.wrapperSubmenu:not(:hover) .megaMenu {
+  display: none;
 }
 
 .mainButtons {
