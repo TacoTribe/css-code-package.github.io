@@ -3,36 +3,13 @@
   --color2: #202020;
 }
 
-/* Scrollbar Styles */
-/* WebKit Browsers (e.g., Safari) */
-::-webkit-scrollbar-thumb,
-body ::-webkit-scrollbar-thumb {
-  background-color: #202020;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track,
-body ::-webkit-scrollbar-track {
-  background-color: #D9D9D9;
-  border-radius: 10px;
-}
-
-/* Dark Mode Scrollbar Styles */
-body.dark-mode ::-webkit-scrollbar-thumb {
-  background-color: white !important;
-}
-
-body.dark-mode ::-webkit-scrollbar-track {
-  background-color: #3d3d3d !important;
-}
-
 /* Body Styles */
 body {
-  background-color: white;
+  background-color: white!important;
 }
 
 body.dark-mode {
-  background-color: #202020;
+  background-color: #202020!important;
 }
 
 /* Switch Icon Styles for Dark Mode */
