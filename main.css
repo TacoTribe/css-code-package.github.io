@@ -137,7 +137,7 @@ img.imgLogo {
 
 /* Styling for the subnavigasi links */
 .subnavigasiLinks {
-  display: none;
+  display: block;
   padding: 10px;
   text-decoration: none;
   color: #202020;
