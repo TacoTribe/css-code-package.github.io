@@ -166,7 +166,7 @@ a.subnavigasiLinks:hover,
 a.subnavigasiLinks:focus,
 a.subnavigasiLinks:active
 {
-  color:#FEDF18;
+  color:#FEDF18!important;
   border-radius:16px;
 }
 
