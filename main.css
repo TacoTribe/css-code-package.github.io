@@ -132,6 +132,7 @@ img.imgLogo {
     width: 150px;
     border-radius: 16px;
     border: 2px solid #FEDF18;
+    margin-top:10px;
 }
 
 /* Styling for the subnavigasi links */
@@ -144,7 +145,7 @@ img.imgLogo {
 }
 
 /* Show mega menu on hover */
-.wrapperSubmenu:hover .megaMenu {
+.wrapperSubmenu:active .megaMenu {
   display: block;
 }
 
