@@ -1,46 +1,48 @@
-:root {
+:root{
   --color1: white;
   --color2: #202020;
 }
 
-/* Body Styles */
-body {
+/* Body Default Color */
+body{
   background-color: white!important;
 }
 
-body.dark-mode {
+/* Body Dark Mode Color */
+body.dark-mode{
   background-color: #202020!important;
 }
 
-/* Switch Icon Styles for Dark Mode */
+/* Switch Icon Color When Dark Mode */
 body.dark-mode #whiteModeSwitch,
 body.dark-mode #darkModeSwitch {
-  color: #202020 !important;
+  color: #202020!important;
 }
 
-/* Navigation Link Styles for Dark Mode */
-body.dark-mode .navlink {
+/* Navigation Link Color when Dark Mode */
+body.dark-mode .navlink{
   color: white;
 }
 
+/* Navigation Link Hover Color When Hover , Focus and Active */
 body.dark-mode .navlink:hover,
 body.dark-mode .navlink:focus,
-body.dark-mode .navlink:active {
+body.dark-mode .navlink:active{
   color: #202020;
 }
 
-/* Transition Animation for Icon Switch */
+/* Transition Animation For Icon Switch */
 #whiteModeSwitch,
 #darkModeSwitch {
   transition: color 0.5s ease;
 }
 
-/* Switch Mode Styles */
+/* Switch Mode Style*/
 .switchMode {
   display: flex;
 }
 
-/* Cursor And Animation Styles For Switch Icon */
+/* Cursor And Animation Style For Swtich Icon */
 .darkModeSwitch,
 .whiteModeSwitch {
   cursor: pointer;
@@ -60,7 +62,6 @@ body:not(.dark-mode) .darkModeSwitch {
   justify-content: end;
 }
 
-/* Main Button Styles */
 .mainButtons {
   font-family: 'Candy Beans', Sans-Serif;
   font-size: 20px;
@@ -76,7 +77,8 @@ body:not(.dark-mode) .darkModeSwitch {
   flex-direction: row;
   column-gap: 10px;
   justify-content: center;
-  text-decoration: none;
+  align-items: center;
+  text-decoration: none; 
 }
 
 .mainButtons.mode {
@@ -89,41 +91,50 @@ img.imgLogo {
   height: 46px!important;
 }
 
-.wrapperNav {
+.wrapperNav{
   display: flex;
-  flex-direction: row;
-  column-gap: 53px;
+   flex-direction: row;
+  column-gap:53px;
   align-items: center;
   justify-content: center;
 }
-
-.navlink {
+    
+.navlink{
   font-family: 'Candy Beans', Sans-Serif;
   font-size: 20px;
   line-height: normal;
   color: #202020;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius:8px;
   transition: all 0.3s ease-in-out;
+}
+    
+.navlink:hover,
+.navlink:focus,
+.navlink:active{
+  background-color: #FEDF18;
+  color: #202020;
 }
 
 .wrapperSubmenu {
   position: relative;
 }
 
-/* Mega Menu Styles */
+/* Styling for the mega menu */
 .megaMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  z-index: 1;
-  width: 150px;
-  border-radius: 16px;
-  border: 2px solid #FEDF18;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,.1); */
+    z-index: 1;
+    width: 150px;
+    border-radius: 16px;
+    border: 2px solid #FEDF18;
 }
 
+/* Styling for the subnavigasi links */
 .subnavigasiLinks {
   display: block;
   padding: 10px;
@@ -137,226 +148,87 @@ img.imgLogo {
   display: block;
 }
 
-/* Button Shadow Styles */
-.mainButtons,
-body.dark-mode .mainButtons {
-  box-shadow: 0px 8px 0px 0px #393939 !important;
-  position: relative;
-  transform: translateY(0px);
-  transition: all 0.3s ease-in-out;
+.mainButtons {
+    box-shadow: 0px 8px 0px 0px #393939 !important;
+    -webkit-box-shadow: 0px 8px 0px 0px #393939 !important;
+    -moz-box-shadow: 0px 8px 0px 0px #393939 !important;
+    position: relative;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
 }
 
 .mainButtons:hover,
-.mainButtons:focus,
-.mainButtons:active,
+.mainButtons:focus {
+    transform: translateY(4px);
+    box-shadow: 0px 2px 0px 0px #393939 !important;
+    -webkit-box-shadow: 0px 2px 0px 0px #393939 !important;
+    -moz-box-shadow: 0px 4px 0px 0px #393939 !important;
+}
+
+.mainButtons:active {
+    transform: translateY(8px);
+    box-shadow: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+body.dark-mode .mainButtons {
+  border-color: #A0522D;
+  box-shadow: 0px 8px 0px 0px #a0972d !important;
+  -webkit-box-shadow: 0px 8px 0px 0px #a0972d !important;
+  -moz-box-shadow: 0px 8px 0px 0px #a0972d !important;
+    position: relative;
+    transform: translateY(0px) !important;
+    transition: all 0.3s ease-in-out;
+}
+
 body.dark-mode .mainButtons:hover,
 body.dark-mode .mainButtons:active {
-  transform: translateY(4px);
-  box-shadow: 0px 2px 0px 0px #393939 !important;
+    box-shadow: 0px 4px 0px 0px #a0972d !important;
+    -webkit-box-shadow: 0px 4px 0px 0px #a0972d !important;
+    -moz-box-shadow: 0px 4px 0px 0px #a0972d !important;
+    transform: translateY(4px) !important;
 }
 
-.mainButtons:active,
 body.dark-mode .mainButtons:active {
-  transform: translateY(8px);
-  box-shadow: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(8px) !important;
+    box-shadow: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-/* Sticky Navigation Styles */
-.navigation {
-  position: relative;
-  z-index: 15;
-  border-bottom: 1px solid transparent;
-  transition: all 0.5s ease-in-out;
+/* Fix Spacing Desktop Navigation */
+.elementor-4452 .elementor-element.elementor-element-f40b226 {
+  width:!important;
 }
 
-.navigation.with-border {
-  top: 0;
-  width: 100%;
-  border-bottom: 1px solid #202020;
-  transition: all 0.5s ease-in-out;
+/* Fix Spacing Desktop Navigation */
+.elementor-4452 .elementor-element.elementor-element-5a96e82>.elementor-container{
+    justify-content: space-between;
 }
 
-section#stickyNav,
-section#stickyNavMobile {
-  transition: all 0.5s ease-in-out;
-  width: 100%;
-  position: sticky !important;
-}
-
-.sticky {
-  top: 0;
-  width: 100%;
-}
-
-body.dark-mode section#stickyNav,
-body.dark-mode section#stickyNavMobile {
-  border-bottom: 1px solid transparent;
-  transition: all 0.5s ease-in-out;
-  background-color: #202020 !important;
-}
-
-body.dark-mode .with-border {
-  border-bottom: 1px solid white !important;
-}
-
-/* Remove Dotted When Hover Navlink and Button */
-.wrapperNav a:hover,
-a.mainButtons:hover {
-  text-decoration: none;
-  border-bottom: none;
-}
-
-/* Utility Styles */
-.mainText {
-  color: #202020;
-}
-
-body.dark-mode .mainText {
-  color: white;
-}
-
-.highlightText {
-  color: #DBBF09 !important;
-  text-decoration: underline !important;
-  text-decoration-color: #DBBF09 !important;
-}
-
-.staticButton a {
-  width: 100%;
-}
-
-/* Mini Gallery Styles */
-.miniGallery img {
-  border-radius: 8px !important;
-  border: 2px solid #202020;
-  z-index: 2;
-}
-
-body.dark-mode .miniGallery img {
-  border: 2px solid white;
-}
-
-/* Footer Styles */
-.wrapperSocialFooter {
-  display: flex;
-  flex-direction: row;
-  column-gap: 31px;
-  flex-wrap: wrap;
-  justify-content: end;
-}
-
-.socialFooter {
-  text-decoration: none;
-  color: #202020;
-  font-size: 20px;
-  transition: all 0.5s ease-in-out;
-}
-
-.socialFooter:hover,
-.socialFooter:focus,
-.socialFooter:active {
-  color: #FFA713;
-}
-
-body.dark-mode .socialFooter {
-  color: white !important;
-}
-
-body.dark-mode .socialFooter:hover,
-body.dark-mode .socialFooter:focus,
-body.dark-mode .socialFooter:active {
-  color: #FFA713 !important;
-}
-
-/* Next Page Styles */
-.sectionPage {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.sectionPage.activeSection {
-  display: block;
-  opacity: 1;
-}
-
-/* Section 3 Card Styles */
-.cardWrapper div {
-  display: flex;
-  column-gap: 20px !important;
-  justify-content: space-between;
-}
-
-.cardWrapper img {
-  border: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-.cardWrapper img:hover,
-.cardWrapper img:focus,
-.cardWrapper img:active {
-  border: 2px solid #202020;
-  transition: all 0.3s ease-in-out;
-}
-
-body.dark-mode .cardWrapper img:hover,
-body.dark-mode .cardWrapper img:focus,
-body.dark-mode .cardWrapper img:active {
-  border: 1px solid white !important;
-}
-
-/* Section 5 Styles */
-#mg5 img {
-  width: 100%;
-}
-
-/* Section 9 Styles */
-.gifImages img {
-  max-width: 100% !important;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.collaboration img {
-  width: 100vw !important;
-  height: 100% !important;
-  max-width: 100% !important;
-  border-radius: 8px !important;
-  border: 2px solid #202020 !important;
-  padding: 9px 18.74px;
-  height: 62.65px !important;
-  background: white !important;
-}
-
-body.dark-mode .collaboration img {
-  border: 2px solid #FFA713 !important;
-}
-
-/* Burger Styles */
-.burguer-container {
+/* Burger CSS  */
+.burguer-container{
   cursor: pointer;
   --distancia_btn-burger: 5px;
   --ancho_btn-burger: 35px;
   --alto_btn-burger: 3px;
   --bd_radio: 1em;
   --dimension: 50px;
-  height: calc(var(--distancia_btn-burger) * 2);
+  height: calc( var(--distancia_btn-burger) * 2 );
   display: flex;
   align-items: center;
   justify-content: end;
-  margin: 0;
+  margin: 0px;
 }
 
-.btn-burguer {
+.btn-burguer{
   background-color: ;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  transition: all ease 0.3s;
-  transition-delay: 0.075s;
+  transition: all ease .3s;
+  transition-delay: .075s;
   font-size: var(--dimension);
   border-radius: var(--bd_radio);
   width: var(--ancho_btn-burger);
@@ -364,8 +236,8 @@ body.dark-mode .collaboration img {
 }
 
 .btn-burguer::before,
-.btn-burguer::after {
-  --distancia-seudoelemento: translateY(var(--distancia_btn-burger));
+.btn-burguer::after{
+  --distancia-seudoelemento: translateY( var(--distancia_btn-burger) );
   --rotacion-inicial: rotateZ(0deg);
   --rotacion-final: rotateZ(45deg);
   --distancia-negada: translateY(0);
@@ -383,47 +255,251 @@ body.dark-mode .collaboration img {
   transform: var(--distancia-seudoelemento) var(--rotacion-inicial);
 }
 
-.btn-burguer::after {
+.btn-burguer::after{
   --rotacion-final: rotateZ(-45deg);
-  --distancia-negativa: calc(var(--distancia_btn-burger) * -1);
-  --distancia-arriba: translateY(var(--distancia-negativa));
-  --distancia-seudoelemento: var(--distancia-arriba);
+  --distancia-negativa: calc( var(--distancia_btn-burger) * -1);
+  --distancia-arriba: translateY( var(--distancia-negativa) );
+  --distancia-seudoelemento: var(--distancia-arriba) ;
 }
 
-#btn_burguer {
+#btn_burguer{
   position: absolute;
   opacity: 0;
 }
 
-#btn_burguer:checked ~ .btn-burguer {
-  background-color: rgba(255, 255, 255, 0);
+#btn_burguer:checked ~ .btn-burguer{  
+  background-color: rgba(255,255,255,0);
   animation: anima_btn-burger 1s ease 1 forwards;
 }
 
-#btn_burguer:not(:checked):focus ~ .btn-burguer {
+#btn_burguer:not(:checked):focus ~ .btn-burguer{  
   animation: desanima_btn-burger 1s ease 1 forwards;
 }
 
 body.dark-mode .btn-burguer::before,
-body.dark-mode .btn-burguer::after {
-  background-color: white;
+body.dark-mode .btn-burguer::after{
+  background-color:white; 
 }
 
-@keyframes anima_btn-burger {
-  50% {
-    transform: var(--distancia-negada) var(--rotacion-inicial);
-  }
-  100% {
-    transform: var(--distancia-negada) var(--rotacion-final);
-  }
+@keyframes anima_btn-burger{ 
+  50% { transform: var(--distancia-negada) var(--rotacion-inicial);}
+  100% { transform: var(--distancia-negada) var(--rotacion-final);}
 }
 
-@keyframes desanima_btn-burger {
-  50% {
-    transform: var(--distancia-negada) var(--rotacion-inicial);
-  }
-  0% {
-    transform: var(--distancia-negada) var(--rotacion-final);
-  }
+@keyframes desanima_btn-burger{ 
+  50% { transform: var(--distancia-negada) var(--rotacion-inicial);}
+  0% { transform: var(--distancia-negada) var(--rotacion-final);}
 }
-/* Burger Styles */
+/* Burger CSS */
+
+/* Navigation auto line when scrolling */
+  .navigation{
+      position: relative;
+      z-index: 15;
+      border-bottom: 1px solid transparent;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .navigation.with-border{
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #202020;
+    transition: all 0.5s ease-in-out;
+  }
+
+  section#stickyNav,
+  section#stickyNavMobile{
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    position:sticky!important;
+  }
+
+  .sticky {
+  top: 0;
+  width: 100%;
+  }
+
+  body.dark-mode section#stickyNav,
+  body.dark-mode section#stickyNavMobile{
+    border-bottom : 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    background-color: #202020!important;
+  }
+
+  body.dark-mode .with-border{
+    border-bottom: 1px solid white!important;
+  }
+/* Navigation auto line when scrolling */
+
+/* Remove Dotted When Hover Navlink and Button */
+.wrapperNav a:hover {
+  text-decoration: none; 
+  border-bottom: none; 
+}
+
+a.mainButtons:hover {
+  text-decoration: none;
+}
+/* Remove Dotted When Hover Navlink and Button */
+
+/* Utility Style  */
+  .mainText{
+    color: #202020;
+  }
+
+  body.dark-mode .mainText{
+    color: white;
+  }
+  
+  .highlightText{
+    color: #DBBF09!important;
+    text-decoration: underline!important;
+    text-decoration-color: #DBBF09!important;
+  }
+
+  .staticButton a{
+    width:100%;
+  }
+/* Utility Style */
+
+/* Mini Gallery Style */
+  .miniGallery img{
+    border-radius: 8px!important;
+    border: 2px solid #202020;
+    z-index: 2;
+  }
+  
+  body.dark-mode .miniGallery img{
+      border: 2px solid white;
+  }
+/* Mini Gallery Style */
+
+/* Footer Style */
+  .wrapperSocialFooter{
+  display:flex;
+  flex-direction:row;
+  column-gap:31px;
+  flex-warp:warp;
+  justify-content:end;
+}
+
+.socialFooter{
+  text-decoration:none;
+  color:#202020;
+  font-size: 20px;
+  transition : all 0.5s ease-in-out;
+}
+
+.socialFooter:hover,
+.socialFooter:focus,
+.socialFooter:active{
+  color:#FFA713;
+}
+
+body.dark-mode .socialFooter{
+  color:white!important;
+}
+
+body.dark-mode .socialFooter:hover,
+body.dark-mode .socialFooter:focus,
+body.dark-mode .socialFooter:active{
+  color:#FFA713!important;
+}
+
+/* Footer Style */
+
+/* Next Page Main Function */
+.sectionPage {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Ubah durasi dan fungsi-timing sesuai kebutuhan */
+}
+
+.sectionPage.activeSection {
+  display: block;
+  opacity: 1;
+}
+/* Next Page Main Function */
+
+/* Section 3 Card */
+  .cardWrapper div{
+    display: flex;
+    column-gap: 20px!important;
+    justify-content: space-between;
+}
+
+.cardWrapper img{
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.cardWrapper img:hover,
+.cardWrapper img:focus,
+.cardWrapper img:active{
+    border:2px solid #202020;
+        transition: all 0.3s ease-in-out;
+}
+
+body.dark-mode .cardWrapper img:hover,
+body.dark-mode .cardWrapper img:focus,
+body.dark-mode .cardWrapper img:active{
+    border: 1px solid white!important;
+}
+
+
+/* Section 3 Card  */
+
+/* Section 5 */
+  #mg5 img{
+    width: 100%;  
+  }
+/* Section 5 */
+
+/* Section 9  */
+  .gifImages img{
+    max-width: 100%!important;
+    width: 100%!important;
+    height: 100%!important;
+  }
+
+  .collaboration img{
+    width: 100vw!important;
+    height: 100%!important;
+    max-width: 100%!important;
+    border-radius: 8px!important;
+    border: 2px solid #202020!important;
+    padding: 9px 18.74px;
+    height: 62.65px!important;
+    background: white!important;
+  }
+
+  body.dark-mode .collaboration img{
+    border: 2px solid #FFA713!important;
+  }
+/* Section 9  */
+
+
+
+/* Breakpoint tablet */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+  #accentPic{
+    display:none!important;
+  }
+
+}
+
+/* Breakpoint Mobile */
+@media only screen and (max-width: 479px) {
+  #accentPic{
+    display:none!important;
+  }
+
+  .wrapperSocialFooter{
+    justify-content:center;
+  }
+
+  .navButtonGroup {
+    justify-content: center!important;
+  }
+
+}
