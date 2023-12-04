@@ -146,15 +146,13 @@ img.imgLogo {
 
 /* Show mega menu on hover and keep it open when moving towards it */
 .wrapperSubmenu:hover .megaMenu,
-.megaMenu:hover
-.subnavigasiLinks:hover .megaMenu{
+.megaMenu:hover{
   display: block;
   opacity: 1;
 }
 
 /* Hide mega menu when not hovering over the submenu or mega menu */
-.wrapperSubmenu:not(:hover) .megaMenu,
-.subnavigasiLinks:not(:hover) .megaMenu{
+.wrapperSubmenu:not(:hover) .megaMenu{
   display: none;
   opacity: 0;
 }
