@@ -86,7 +86,7 @@ body:not(.dark-mode) .darkModeSwitch {
 /* Logo Style */
 img.imgLogo {
   width: auto;
-  height: 46px;
+  height: 46px!important;
 }
 
 .wrapperNav {
