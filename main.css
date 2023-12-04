@@ -148,13 +148,13 @@ img.imgLogo {
 .wrapperSubmenu:hover .megaMenu,
 .megaMenu:hover {
   display: block;
-    transition: all 0.3s ease-in-out;
+  opacity: 1;
 }
 
 /* Hide mega menu when not hovering over the submenu or mega menu */
 .wrapperSubmenu:not(:hover) .megaMenu {
   display: none;
-    transition: all 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .mainButtons {
