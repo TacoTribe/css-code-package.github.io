@@ -166,7 +166,7 @@ a.subnavigasiLinks:hover,
 a.subnavigasiLinks:focus,
 a.subnavigasiLinks:active
 {
-  background-color:#FEDF18;
+  color:#FEDF18;
   border-radius:16px;
 }
 
@@ -182,7 +182,7 @@ body.dark-mode a.subnavigasiLinks{
 body.dark-mode a.subnavigasiLinks:hover,
 body.dark-mode a.subnavigasiLinks:focus,
 body.dark-mode a.subnavigasiLinks:active{
-  color:#202020!important;
+  color:#FEDF18!important;
 }
 
 .mainButtons {
