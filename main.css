@@ -175,6 +175,10 @@ body.dark-mode .megaMenu{
   color:white!important;
 }
 
+body.dark-mode a.subnavigasiLinks{
+  color:white!important;
+}
+
 .mainButtons {
     box-shadow: 0px 8px 0px 0px #393939 !important;
     -webkit-box-shadow: 0px 8px 0px 0px #393939 !important;
