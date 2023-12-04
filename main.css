@@ -176,6 +176,12 @@ body.dark-mode .megaMenu{
 }
 
 body.dark-mode a.subnavigasiLinks{
+  color:white!important;
+}
+
+body.dark-mode a.subnavigasiLinks:hover,
+body.dark-mode a.subnavigasiLinks:focus,
+body.dark-mode a.subnavigasiLinks:active{
   color:#202020!important;
 }
 
